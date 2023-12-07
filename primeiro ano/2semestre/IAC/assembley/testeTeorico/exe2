@@ -1,0 +1,40 @@
+.data
+s: .asciiz "Hello world"
+mins: .word 0
+msg: .asciiz "Total de caracteres: "
+
+.text
+main:
+	la $a0, s         # carrega o endereço de s em $a0
+	li $v0, 4         # chamada de sistema para imprimir string
+	syscall           # executa a chamada de sistema
+
+	li $t0, 0         # inicializa mins = 0
+	la $t1, s         # carrega o endereço de s em $t1
+
+loop:
+	lb $t2, 0($t1)    # carrega o byte apontado por $t1 em $t2
+	beqz $t2, end_loop  # se o byte for igual a zero, salta para end_loop
+	blt $t2, 'a', next   # se o byte for menor que 'a', salta para next
+	bgt $t2, 'z', next   # se o byte for maior que 'z', salta para next
+	addi $t0, $t0, 1     # incrementa mins em 1
+
+next:
+	addi $t1, $t1, 1     # incrementa $t1 para apontar para o próximo byte
+	j loop               # salta para loop
+	
+end_loop:
+	sw $t0, mins         # armazena o valor de mins na memória
+	
+	# imprime o resultado
+	li $v0, 4           # chamada de sistema para imprimir string
+	la $a0, msg         # carrega o endereço de msg em $a0
+	syscall             # executa a chamada de sistema
+	
+	li $v0, 1           # chamada de sistema para imprimir inteiro
+	lw $a0, mins        # carrega o valor de mins em $a0
+	syscall             # executa a chamada de sistema
+	
+	# saída do programa
+	li $v0, 10          # chamada de sistema para encerrar o programa
+	syscall             # executa a chamada de sistema

@@ -1,0 +1,35 @@
+.data
+str: .asciiz "Hello, world!"  # string de exemplo
+.text
+main:
+
+    # chamada da função strlen
+    la $a0, str       # carrega o endereço da string em $a0
+    jal strlen        # chama a função strlen
+
+    # o resultado da função strlen estará em $v0
+    move $a0, $v0     # move o tamanho para $a0
+    li $v0, 1         # código do syscall para imprimir inteiro
+    syscall           # imprime o tamanho da string
+
+    # sair do programa
+    li $v0, 10        # código do syscall para sair do programa
+    syscall
+
+strlen:
+    li $v0, 0         # Inicializa o contador n com 0
+    li $t0, 0         # Inicializa o índice i com 0
+
+loop:
+    addu $t1, $a0, $t0     # Lê o byte da memória no endereço apontado por $a0 + i (str[i])
+    addi $t0, $t0, 1       # Incrementa o ponteiro para o próximo caractere
+    lb $t2, 0($t1)         # t2 = str[i]
+    beq $t2, $zero, exit   # Se o byte lido for zero (terminador nulo), sai do loop
+    
+    addi $v0, $v0, 1       # Incrementa o contador n
+
+    j loop                 # Salta de volta para o início do loop
+
+exit:
+    jr $ra                 # Retorna para a função chamadora
+

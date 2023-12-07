@@ -1,0 +1,54 @@
+.data
+msg: .asciiz "\n-->Teste2 de IAC, ex2b<--"
+minus: .asciiz "\nO nr de minusculas e: "
+newline: .asciiz "\n"
+
+.text
+.globl main
+
+print_str:
+    move $a0, $t0           # Move o endereço de msg para $a0
+    li $v0, 4               # Carrega o código da syscall para imprimir string
+    syscall                 # Executa a syscall
+    jr $ra                  # Salta para o endereço de retorno
+
+print_int10:
+    move $a0, $t0           # Move o valor inteiro para $a0
+    li $v0, 1               # Carrega o código da syscall para imprimir inteiro
+    syscall                 # Executa a syscall
+    jr $ra                  # Salta para o endereço de retorno
+
+nr_minus:
+    move $t1, $a0           # Copia o endereço de s para $t1
+    li $t2, 0               # Inicializa minus = 0
+
+nr_minus_loop:
+    lb $t3, 0($t1)          # Carrega o byte apontado por $t1 em $t3
+    beqz $t3, nr_minus_end  # Se o byte for igual a zero, salta para nr_minus_end
+    blt $t3, 'a', nr_minus_next   # Se o byte for menor que 'a', salta para nr_minus_next
+    bgt $t3, 'z', nr_minus_next   # Se o byte for maior que 'z', salta para nr_minus_next
+    addi $t2, $t2, 1        # Incrementa minus em 1
+
+nr_minus_next:
+    addi $t1, $t1, 1        # Incrementa $t1 para apontar para o próximo byte
+    j nr_minus_loop         # Salta para nr_minus_loop
+
+nr_minus_end:
+    move $v0, $t2           # Move o valor de minus para $v0
+    jr $ra                  # Salta para o endereço de retorno
+
+main:
+    la $t0, msg             # Carrega o endereço de msg em $t0
+    move $a0, $t0           # Move o endereço de msg para $a0
+    jal print_str           # Chama a função print_str
+
+    la $a0, minus           # Carrega o endereço de minus em $a0
+    jal print_str           # Chama a função print_str
+
+    move $a0, $t0           # Move o endereço de msg para $a0
+    jal nr_minus            # Chama a função nr_minus e o resultado será armazenado em $v0
+
+    move $t2, $v0           # Move o resultado de nr_minus para $t2
+
+    move $a0, $t2
+    jal print_int10         # Chama a função print_int10

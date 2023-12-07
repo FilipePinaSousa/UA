@@ -1,0 +1,70 @@
+.data
+prompt_base:    .asciiz "Digite a base: "
+prompt_exp:     .asciiz "Digite o expoente: "
+
+.text
+
+# Função: x_to_y
+# Argumentos:
+#   $a0: base
+#   $a1: exp
+# Retorna:
+#   $v0: resultado
+# Função: main
+main:
+    # Solicitar base
+    li $v0, 4                   # Imprimir string
+    la $a0, prompt_base         # Endereço da solicitação
+    syscall
+    
+    # Ler base
+    li $v0, 5                   # Ler inteiro
+    syscall
+    move $t0, $v0               # Armazenar base em $a0
+    
+    # Solicitar exp
+    li $v0, 4                   # Imprimir string
+    la $a0, prompt_exp          # Endereço da solicitação
+    syscall
+    
+    # Ler exp
+    li $v0, 5                   # Ler inteiro
+    syscall
+    move $a1, $v0               # Armazenar exp em $a1
+    move $a0,$t0		#armazenar a base em $t0
+    
+    # Chamar x_to_y
+    jal x_to_y
+    
+    # Imprimir o resultado
+    move $a0, $v0               # Mover o resultado para $a0
+    li $v0, 1                   # Imprimir inteiro
+    syscall
+    
+    # Encerrar programa
+    li $v0, 10                  # Chamada de encerramento
+    syscall
+
+x_to_y:
+
+    # Comparar exp com 0
+    bne $a1, 0, x_to_y_endif   # Se exp == 0, retorna 1
+    li $v0,1
+    jr $ra
+    
+   
+x_to_y_endif:
+    
+    subiu $sp,$sp,8
+    sw $ra,0($sp)
+    sw $s0,4($sp)
+    move $s0,$a0 #s0 = base
+    subi $a1,$a1,1
+    jal x_to_y
+    mul $v0,$s0,$v0 #retorna base * x_to_y
+    lw $ra,0($sp)
+    lw $s0,4($sp)
+    addiu $sp,$sp,8
+    jr $ra
+                         
+

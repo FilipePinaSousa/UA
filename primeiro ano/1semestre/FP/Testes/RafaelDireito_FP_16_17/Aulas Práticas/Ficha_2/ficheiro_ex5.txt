@@ -1,0 +1,4 @@
+Miguel, 4, 10, 5
+José, 25, 9, 8
+Carlos, 20, 4,10
+Rodrigo, 22, 10, 5

@@ -1,0 +1,42 @@
+
+
+%a)
+Ta = 0.2;
+T = 1 / Ta;
+
+x(t) = sin(2 * pi * T);
+    % Chama a função ReconstroiSinal para reconstruir o sinal
+    sinc = ReconstroiSinal(x, Ta);
+    
+    % Define o vetor de tempo para o sinal reconstruído
+    t = (0:length(sinc) - 1) * Ta;
+    
+    % Plota o sinal reconstruído
+    figure;
+    plot(t, sinc);
+    xlabel('Tempo (s)');
+    ylabel('Amplitude');
+    title('Sinal Reconstruído');
+    grid on;
+
+figure(1)
+%%
+%b)
+Ta = 0.04;
+T = 1 / Ta;
+
+y(t) = sin(10 * pi * T) + cos(12 * pi * T) + cos(14 * pi * T - pi/4);
+% Chama a função ReconstroiSinal para reconstruir o sinal
+    sinc = ReconstroiSinal(x, Ta);
+    
+    % Define o vetor de tempo para o sinal reconstruído
+    t = 0:Ta:5;
+ % Plota o sinal reconstruído
+    figure;
+    plot(t, sinc);
+    xlabel('Tempo (s)');
+    ylabel('Amplitude');
+    title('Sinal Reconstruído');
+    grid on;
+
+figure(2)

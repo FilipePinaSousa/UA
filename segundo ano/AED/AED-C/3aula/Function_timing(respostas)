@@ -1,0 +1,49 @@
+a) Para compilar o programa, você precisa ter um compilador C instalado em seu sistema. Você pode usar o GCC (GNU Compiler Collection) para compilar o código.
+Por exemplo, no Linux, você pode executar o seguinte comando no terminal:
+
+gcc -o functions_timing functions_timing.c elapsed_time.c
+
+        Isso irá gerar um arquivo executável chamado "functions_timing". Para executar o programa, basta digitar:
+
+./functions_timing
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+b) Os resultados de diferentes execuções do programa podem variar devido a vários fatores, como a carga do sistema, otimizações do compilador, entre outros.
+Portanto, é possível que haja diferenças significativas nos resultados entre diferentes execuções.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+c) Para determinar a ordem de complexidade de um algoritmo a partir dos resultados,
+ você pode analisar como os valores das colunas de cada tabela crescem à medida que n aumenta.
+ Por exemplo, se o tempo de execução dobrar quando n for multiplicado por 10, isso sugere uma complexidade de O(n).
+ Se o tempo de execução aumentar para o quadrado quando n for multiplicado por 10, isso sugere uma complexidade de O(n²).
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+d) Analisando a última coluna de cada tabela, você pode identificar o padrão associado a cada uma das ordens de complexidade.
+Por exemplo, se o valor da coluna dobrar a cada aumento de n, isso sugere uma complexidade exponencial (O(2^n)).
+Se o valor da coluna aumentar de forma linear, isso sugere uma complexidade linear (O(n)).
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+e) Para comparar as tabelas e os resultados com o exercício anterior, é necessário ter acesso aos resultados do exercício anterior.
+Sem essa informação, não é possível realizar a comparação.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+f) A capacidade de obter resultados para maiores valores de n depende do desempenho do sistema e da eficiência dos algoritmos implementados.
+ Em alguns casos, pode ser possível obter resultados em tempo útil para maiores valores de n,
+ enquanto em outros casos pode ser inviável devido ao aumento da complexidade e do tempo de execução.
+
+Certifique-se de que o arquivo elapsed_time.h esteja presente e contenha as definições necessárias para medir o tempo de execução. Caso contrário,
+o programa não será compilado corretamente.

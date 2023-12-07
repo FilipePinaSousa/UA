@@ -1,0 +1,33 @@
+.data
+frase: .asciiz "Introduza dois números: "
+result: .asciiz "A soma dos números é: "
+
+.text
+main:
+    # Imprime o prompt
+    la $a0, frase
+    li $v0, 4
+    syscall
+
+    # Lê o primeiro número
+    li $v0, 5
+    syscall
+    move $t0, $v0
+
+    # Lê o segundo número
+    li $v0, 5#ser executada syscall 5
+    syscall
+    move $t1, $v0 #t1 = readint()
+
+    # Calcula a soma e imprime o resultado
+    add $t2, $t0, $t1
+    la $a0, result
+    li $v0, 4
+    syscall
+    li $v0, 1
+    move $a0, $t2
+    syscall
+
+    # Encerra o programa
+    li $v0, 10
+    syscall

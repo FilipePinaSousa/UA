@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ff3b949-b607-47d1-a9f8-f81320480279" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/2aula/binary_search(errada).c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/2aula/integer_arithmetic_pitfalls.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/2aula/primes(errado).c" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-AED" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="2.2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2VOZoBiDhfQM5uzKZ4qZKGWtbZK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-C",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/3aula" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="functions_iterations_count.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AED" TARGET_NAME="functions_iterations_count.c" CONFIG_NAME="functions_iterations_count.c">
+      <option name="sourceFile" value="3aula/functions_iterations_count.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.functions_iterations_count.c" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ff3b949-b607-47d1-a9f8-f81320480279" name="Changes" comment="" />
+      <created>1694709259882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694709259882</updated>
+      <workItem from="1694709261183" duration="70000" />
+      <workItem from="1694709363202" duration="1129000" />
+      <workItem from="1694710540344" duration="322000" />
+      <workItem from="1695046277282" duration="1000" />
+      <workItem from="1695046755482" duration="57000" />
+      <workItem from="1695046873069" duration="22000" />
+      <workItem from="1695046901267" duration="11000" />
+      <workItem from="1695046975149" duration="622000" />
+      <workItem from="1695057607356" duration="45000" />
+      <workItem from="1695057669085" duration="5542000" />
+      <workItem from="1695115989398" duration="15000" />
+      <workItem from="1695651073078" duration="1315000" />
+      <workItem from="1695662353481" duration="5423000" />
+      <workItem from="1695742412412" duration="4446000" />
+      <workItem from="1695916242617" duration="47000" />
+      <workItem from="1695916299247" duration="607000" />
+      <workItem from="1695916918883" duration="1686000" />
+      <workItem from="1695998348926" duration="4850000" />
+      <workItem from="1696014872462" duration="1286000" />
+      <workItem from="1696165618979" duration="4540000" />
+      <workItem from="1696267580510" duration="3876000" />
+      <workItem from="1696360170132" duration="1000" />
+      <workItem from="1696871935940" duration="5605000" />
+      <workItem from="1697123892951" duration="39000" />
+      <workItem from="1697123938851" duration="1696000" />
+      <workItem from="1697203580045" duration="1452000" />
+      <workItem from="1697469137420" duration="117000" />
+      <workItem from="1697476383140" duration="5152000" />
+      <workItem from="1698081289764" duration="4233000" />
+      <workItem from="1698690079767" duration="3284000" />
+      <workItem from="1698694123919" duration="1228000" />
+      <workItem from="1699294732724" duration="1000" />
+      <workItem from="1699294842037" duration="5482000" />
+      <workItem from="1699899762265" duration="85000" />
+      <workItem from="1699899857686" duration="2369000" />
+      <workItem from="1701110394004" duration="1698000" />
+      <workItem from="1701197000870" duration="360000" />
+      <workItem from="1701275055027" duration="1000" />
+      <workItem from="1701518130488" duration="26000" />
+      <workItem from="1701714939010" duration="775000" />
+      <workItem from="1701715906890" duration="437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

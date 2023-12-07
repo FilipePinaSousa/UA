@@ -1,0 +1,14 @@
+a= list()
+b = a
+a.append(3)
+print(a)
+print(b)
+
+a "e" b--->[3]
+
+
+a=[3,4,[2,3,4]]
+a[0] --> 3
+a[1] --> 4
+a[2] --> [2,3,4]
+a[2][1] --> 3 dentro da lista de cima

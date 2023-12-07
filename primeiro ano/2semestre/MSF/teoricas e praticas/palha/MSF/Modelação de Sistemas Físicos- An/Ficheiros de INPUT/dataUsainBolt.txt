@@ -1,0 +1,17 @@
+# Tempos de Usain Bolt a correr os 100 m    # ficheiro dataUsainBolt.txt
+# 1º conjunto: final olimpica em Pequim, 2008
+# 2º conjunto: ercord mundial, Berlim 2009
+# Medalha de ouro e record mundial 
+# x (m)	t1 (s)	t2 (s)
+0	0	0
+10	1.83	1.89
+20	2.87	2.88
+30	3.78	3.78
+40	4.65	4.64
+50	5.50	5.47
+60	6.32	6.29
+70	7.14	7.10
+80	7.96	7.92
+90	8.79	8.75
+100	9.69	9.58
+			

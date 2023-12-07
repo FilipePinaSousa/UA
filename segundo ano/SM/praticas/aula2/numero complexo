@@ -1,0 +1,377 @@
+
+1.  Considere os números complexos 𝑝 = 2 + 𝑗3 e 𝑞 = 2 − 𝑗3.
+
+    a) Represente-os na forma polar
+    -------------------------------
+
+
+     Para representar os números complexos na forma polar, 
+     precisamos calcular o módulo e o argumento de cada número.
+
+O módulo de um número complexo 𝑧 = 𝑎 + 𝑗𝑏 é dado por |𝑧| = √(𝑎^2 + 𝑏^2).
+
+Para 𝑝 = 2 + 𝑗3:
+|𝑝| = √(2^2 + 3^2) = √13.
+
+O argumento de um número complexo é o ângulo que o vetor que representa o número faz com o eixo real positivo. 
+Ele pode ser calculado usando a função arcotangente (tan^(-1)) dos componentes imaginário e real do número complexo.
+
+Para 𝑝 = 2 + 𝑗3:
+arg(𝑝) = tan^(-1)(3/2) ≈ 56.31°.
+
+Portanto, 𝑝 na forma polar é 𝑝 = √13 ∠ 56.31°.
+
+Para 𝑞 = 2 − 𝑗3:
+|𝑞| = √(2^2 + (-3)^2) = √13.
+
+arg(𝑞) = tan^(-1)(-3/2) ≈ -56.31°.
+
+Portanto, 𝑞 na forma polar é 𝑞 = √13 ∠ -56.31°.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+b) Determine (e represente no plano complexo) o resultado das operações:( 𝑝 + 𝑞,𝑝 − 𝑞, 𝑝 ∗ 𝑞, 𝑝/𝑞, √𝑝, e √−𝑝 − 𝑞)
+---------------------------------------------------------------------------------------------------------------
+𝑝 + 𝑞:
+------
+(2 + 𝑗3) + (2 − 𝑗3) = 4.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+𝑝 − 𝑞:
+------
+(2 + 𝑗3) − (2 − 𝑗3) = 2𝑗3.
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+𝑝 * 𝑞:
+------
+p * q = (2 + j3) * (2 - j3)
+= 2 * 2 + 2 * (-j3) + j3 * 2 + j3 * (-j3)
+= 4 - 2j3 + 2j3 - j² * 3
+= 4 - j² * 3
+= 4 - (-1) * 3
+= 4 + 3
+= 7
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+𝑝/𝑞:
+----
+p / q = (2 + j3) / (2 - j3) 
+
+= [(2 + j3)(2 + j3)] / [(2 - j3)(2 + j3)]
+
+
+= (4 + 2j3 + 2j3 + j² * 3) / (4 - j³)
+= (4 + 4j3 - 3) / (4 + 3j)
+= (1 + 4j3) / (4 + 3j)
+
+Para simplificar ainda mais a expressão, vamos multiplicar o numerador e o denominador pelo conjugado do denominador novamente:
+
+p / q = [(1 + 4j3)(4 - 3j)] / [(4 + 3j)(4 - 3j)]
+= (4 - 3j + 16j3 - 12j²) / (16 - 9j²)
+= (4 - 12j² + 16j3 - 3j) / (16 + 9)
+= (4 + 12 + 16j3 - 3j) / 25
+= (16j3 - 3j + 16) / 25
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+√𝑝:
+---
+    √p = √(2 + j3)
+
+Para calcular a raiz quadrada de um número complexo, podemos usar a fórmula da forma polar:
+
+r = √(a² + b²)
+θ = arctan(b/a)
+
+Neste caso, a = 2 e b = 3. Vamos calcular r e θ:
+
+r = √(2² + 3²) = √(4 + 9) = √13
+θ = arctan(3/2)
+
+Agora, podemos escrever o número complexo na forma polar:
+
+p = r * e^(jθ) = √13 * e^(j * arctan(3/2))
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+√−𝑝 − 𝑞:
+--------
+√(-p - q) = √(-(2 + j3) - (2 - j3))
+= √(-2 - j3 - 2 + j3)
+= √(-4)
+= √4 * √(-1)
+= 2 * j
+= 2j
+Portanto, √(-p - q) = 2j.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+2.  Efetue as seguintes operações, determinando o respetivo resultado final:
+-------------------------------------------------------------------------------
+   
+
+ a) (1−𝑗)/(2+𝑗) + (3+𝑗)/(4+𝑗^2)
+-----------------------------
+
+
+Para simplificar, vamos multiplicar o numerador e o denominador da primeira fração por (2-𝑗):
+
+[(1-𝑗)(2-𝑗)]/[(2+𝑗)(2-𝑗)] + (3+𝑗)/(4-𝑗^2)
+
+= (2-𝑗-2𝑗+𝑗^2)/(4+𝑗^2) + (3+𝑗)/(4+1)
+
+= (2-3𝑗+(-1))/(4+(-1)) + (3+𝑗)/5
+
+= (1-3𝑗)/3 + (3+𝑗)/5
+
+Para somar as frações, precisamos encontrar um denominador comum, que é o mínimo múltiplo comum de 3 e 5, que é 15:
+
+= [(1-3𝑗) * 5 + (3+𝑗) * 3]/15
+
+= (5-15𝑗 + 9+3𝑗)/15
+
+= (14-12𝑗)/15
+
+Portanto, o resultado final é (14-12𝑗)/15b) (1−𝑗)/(2+𝑗) + (2+𝑗)/(2−𝑗^2)
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+b)
+
+Para simplificar, vamos multiplicar o numerador e o denominador da primeira fração por (2-𝑗):
+
+[(1-𝑗)(2-𝑗)]/[(2+𝑗)(2-𝑗)] + (2+𝑗)/(2-(-1))
+
+= (2-𝑗-2𝑗+𝑗^2)/(4+𝑗^2) + (2+𝑗)/3
+
+= (2-3𝑗+(-1))/(4+(-1)) + (2+𝑗)/3
+
+= (1-3𝑗)/3 + (2+𝑗)/3
+
+= (1-3𝑗+2+𝑗)/3
+
+= (3-2𝑗)/3
+
+Portanto, o resultado final é (3-2𝑗)/3.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////7
+
+c) 2𝑒𝑗𝜋/2 + 2𝑒−𝑗𝜋/2
+------------------
+
+= 2(cos(𝜋/2) + 𝑗sin(𝜋/2)) + 2(cos(-𝜋/2) + 𝑗sin(-𝜋/2))
+
+= 2(0 + 𝑗) + 2(0 - 𝑗)
+
+= 2𝑗 - 2𝑗
+
+= 0
+
+Portanto, o resultado final é 0.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+d) 1 + 𝑗 + √2𝑒𝑗7𝜋/4
+------------------
+= 1 + 𝑗 + √2(cos(7𝜋/4) + 𝑗sin(7𝜋/4))
+
+= 1 + 𝑗 + √2(-√2/2 + 𝑗(-√2/2))
+
+= 1 + 𝑗 - √2/2 + 𝑗(-√2/2)
+
+= (1 - √2/2) + (1 - √2/2)𝑗
+
+Portanto, o resultado final é (1 - √2/2) + (1 - √2/2)𝑗.
+
+    Utilizando a relação de Euler, demonstre que:
+    cos(𝜔𝑡) = 𝑒𝑗𝜔𝑡 + 𝑒−𝑗𝜔𝑡)/2 e que sin(𝜔𝑡) = (𝑒𝑗𝜔𝑡 − 𝑒−𝑗𝜔𝑡)/(2𝑗).
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+3. Utilizando a relação de Euler, demonstre que:
+cos(𝜔𝑡) = 𝑒𝑗𝜔𝑡 + 𝑒−𝑗𝜔𝑡/2 e que sin(𝜔𝑡) = 𝑒𝑗𝜔𝑡 − 𝑒−𝑗𝜔𝑡/2?
+-----------------------------------------------------?
+
+Para demonstrar as relações trigonométricas usando a relação de Euler, vamos começar com a relação básica:
+
+𝑒^(𝑗𝜃) = cos(𝜃) + 𝑗 sin(𝜃)
+
+A partir dessa relação, podemos derivar as fórmulas para cos(𝜔𝑡) e sin(𝜔𝑡):
+
+1. Para cos(𝜔𝑡):
+---------------
+
+Vamos substituir 𝜃 por 𝜔𝑡 na relação de Euler:
+
+𝑒^(𝑗𝜔𝑡) = cos(𝜔𝑡) + 𝑗 sin(𝜔𝑡)
+
+Agora, vamos usar o fato de que 𝑒^(−𝑗𝜔𝑡) = cos(−𝜔𝑡) + 𝑗 sin(−𝜔𝑡) = cos(𝜔𝑡) − 𝑗 sin(𝜔𝑡):
+
+𝑒^(𝑗𝜔𝑡) + 𝑒^(−𝑗𝜔𝑡) = (cos(𝜔𝑡) + 𝑗 sin(𝜔𝑡)) + (cos(𝜔𝑡) − 𝑗 sin(𝜔𝑡))
+                                 = 2 cos(𝜔𝑡)
+
+Dividindo toda a equação por 2, temos:
+
+cos(𝜔𝑡) = 𝑒^(𝑗𝜔𝑡) + 𝑒^(−𝑗𝜔𝑡) / 2
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2. Para sin(𝜔𝑡):
+----------------
+
+Vamos novamente utilizar a relação de Euler:
+
+𝑒^(𝑗𝜔𝑡) = cos(𝜔𝑡) + 𝑗 sin(𝜔𝑡)
+
+E também 𝑒^(−𝑗𝜔𝑡) = cos(𝜔𝑡) − 𝑗 sin(𝜔𝑡)
+
+Subtraindo as duas equações, temos:
+
+𝑒^(𝑗𝜔𝑡) − 𝑒^(−𝑗𝜔𝑡) = (cos(𝜔𝑡) + 𝑗 sin(𝜔𝑡)) − (cos(𝜔𝑡) − 𝑗 sin(𝜔𝑡))
+                                 = 2𝑗 sin(𝜔𝑡)
+
+Dividindo toda a equação por 2𝑗, temos:
+
+sin(𝜔𝑡) = (𝑒^(𝑗𝜔𝑡) − 𝑒^(−𝑗𝜔𝑡)) / 2𝑗
+
+Agora, vamos simplificar ainda mais as expressões usando a identidade exponencial:
+
+𝑒^(𝑗𝜔𝑡) = 𝑒^(𝑗𝜔𝑡) * 𝑒^(−𝑗𝜔𝑡) / 𝑒^(−𝑗𝜔𝑡)
+           = 𝑒^(𝑗𝜔𝑡 − 𝑗𝜔𝑡) / 𝑒^(−𝑗𝜔𝑡)
+           = 𝑒^(0𝑡) / 𝑒^(−𝑗𝜔𝑡)
+           = 1 / 𝑒^(−𝑗𝜔𝑡)
+           = 𝑒^(𝑗𝜔𝑡) / 𝑒^(𝑗𝜔𝑡) * 𝑒^(−𝑗𝜔𝑡)
+           = 𝑒^(𝑗𝜔𝑡) / (𝑒^(𝑗𝜔𝑡) * 𝑒^(−𝑗𝜔𝑡))
+           = 𝑒^(𝑗𝜔𝑡) / 𝑒^(0𝑡)
+           = 𝑒^(𝑗𝜔𝑡)
+
+Substituindo esse resultado nas expressões para cos(𝜔𝑡) e sin(𝜔𝑡), temos:
+
+cos(𝜔𝑡) = 𝑒^(𝑗𝜔𝑡) + 𝑒^(−𝑗𝜔𝑡/ 2
+
+sin(𝜔𝑡) = (𝑒^(𝑗𝜔𝑡) − 𝑒^(−𝑗𝜔𝑡)) / (2𝑗)
+
+Portanto, usando a relação de Euler, demonstramos que:
+
+cos(𝜔𝑡) = 𝑒^(𝑗𝜔𝑡) + 𝑒^(−𝑗𝜔𝑡) / 2
+
+sin(𝜔𝑡) = (𝑒^(𝑗𝜔𝑡) − 𝑒^(−𝑗𝜔𝑡)) / (2𝑗)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4. Usando relações trigonométricas conhecidas, mostre que
+cos(𝜔1𝑡) cos(𝜔2𝑡) = 1
+ 1/2[cos((𝜔1 − 𝜔2)𝑡) + cos((𝜔1 + 𝜔2)𝑡)]
+----------------------------------------------------------
+
+
+
+
+Para mostrar essa igualdade, vamos utilizar a identidade trigonométrica conhecida:
+
+cos(𝑎 + 𝑏) = cos 𝑎 cos 𝑏 − sin 𝑎 sin 𝑏
+
+Vamos começar com o lado direito da equação e aplicar essa identidade:
+
+1/2 [cos((𝜔1 − 𝜔2)𝑡) + cos((𝜔1 + 𝜔2)𝑡)]
+
+
+
+
+Usando a identidade cos(𝑎 + 𝑏) = cos 𝑎 cos 𝑏 − sin 𝑎 sin 𝑏, podemos escrever a expressão acima como:
+
+1/2 [cos(𝜔1𝑡) cos(𝜔2𝑡) − sin(𝜔1𝑡) sin(𝜔2𝑡) + cos(𝜔1𝑡) cos(𝜔2𝑡) + sin(𝜔1𝑡) sin(𝜔2𝑡)]
+
+Agora, vamos simplificar essa expressão:
+
+1/2 [2 cos(𝜔1𝑡) cos(𝜔2𝑡)]
+
+= cos(𝜔1𝑡) cos(𝜔2𝑡)
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5. Considere a equação geral de coeficientes reais:
+𝑎2𝑥2 + 𝑎1𝑥 + 𝑎0 = 0.
+Que condições devem ser verificadas para que esta equação tenha como solução
+números imaginários puros?
+----------------------------------------------------------
+
+ Para que a equação tenha números imaginários puros como soluções, é necessário que as raízes sejam da forma 
+𝑥 = 𝑗𝑏, onde 𝑏 é um número real e 𝑗 é a unidade imaginária.
+
+Considerando a equação geral 𝑎2𝑥2 + 𝑎1𝑥 + 𝑎0 = 0, substituindo 𝑥 por 𝑗𝑏, obtemos:
+
+𝑎2(𝑗𝑏)^2 + 𝑎1(𝑗𝑏) + 𝑎0 = 0.
+
+Expandindo essa equação, temos:
+
+−𝑎2𝑏2 + 𝑎1𝑗𝑏 + 𝑎0 = 0.
+
+Para que essa equação seja verdadeira, as partes real e imaginária devem ser iguais a zero. Portanto, temos as seguintes condições:
+
+−𝑎2𝑏2 + 𝑎0 = 0 (parte real)
+𝑎1𝑏 = 0        (parte imaginária)
+
+Se 𝑏 ≠ 0, então 𝑎1 = 0 para satisfazer a parte imaginária da equação. 
+Isso significa que o coeficiente 𝑎1 deve ser igual a zero para que a equação tenha números imaginários puros como soluções.
+
+Se 𝑏 = 0, então a parte real da equação se torna 𝑎0 = 0. 
+Nesse caso, o coeficiente 𝑎0 deve ser igual a zero para que a equação tenha números imaginários puros como soluções.
+
+Portanto, as condições para que a equação tenha números imaginários puros como soluções são 𝑎1 = 0 ou 𝑎0 = 0.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+6. Mostre que a multiplicação de um número complexo pelo seu conjugado é igual ao
+quadrado do seu módulo.
+--------------------------------------------------------------------------------
+
+
+Para mostrar que a multiplicação de um número complexo pelo seu conjugado é igual ao quadrado do seu módulo, vamos considerar um número complexo genérico 𝑧 = 𝑎 + 𝑗𝑏, onde 𝑎 e 𝑏 são números reais.
+
+O conjugado de 𝑧 é denotado por 𝑧* e é dado por 𝑧* = 𝑎 - 𝑗𝑏.
+
+A multiplicação de 𝑧 por seu conjugado é 𝑧 * 𝑧*:
+
+(𝑎 + 𝑗𝑏)(𝑎 - 𝑗𝑏).
+
+Usando a regra de multiplicação de binômios, temos:
+
+𝑧 * 𝑧* = 𝑎^2 - 𝑗𝑏𝑎 + 𝑗𝑏𝑎 - (𝑗𝑏)^2.
+
+Simplificando os termos, temos:
+
+𝑧 * 𝑧* = 𝑎^2 - (𝑗𝑏)^2.
+
+Lembrando que (𝑗𝑏)^2 = -𝑏^2, podemos reescrever a equação como:
+
+𝑧 * 𝑧* = 𝑎^2 - (-𝑏^2) = 𝑎^2 + 𝑏^2.
+
+O módulo de um número complexo 𝑧 = 𝑎 + 𝑗𝑏 é dado por |𝑧| = √(𝑎^2 + 𝑏^2).
+
+Portanto, 𝑧 * 𝑧* = 𝑎^2 + 𝑏^2 = |𝑧|^2.
+
+Isso mostra que a multiplicação de um número complexo pelo seu conjugado é igual ao quadrado do seu módulo.

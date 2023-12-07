@@ -1,0 +1,28 @@
+.data
+    imm: .word 2    # número de bits a deslocar
+    num: .word 10   # valor inicial do registrador $t0
+
+.text
+    main:
+        lw $t0, num     # carrega valor inicial em $t0
+        lw $t4, imm     # carrega valor da constante em $t4
+
+        # Deslocamento à esquerda (lógico)
+        sll $t1, $t0, 2 # desloca $t0 2 bits para a esquerda e guarda o resultado em $t1
+        # Deslocamento à direita lógico
+        srl $t2, $t0, 2 # desloca $t0 2 bits para a direita e guarda o resultado em $t2
+        # Deslocamento à direita aritmético
+        sra $t3, $t0, 2 # desloca $t0 2 bits para a direita (aritmético) e guarda o resultado em $t3
+
+        # Mostra os resultados
+        li $v0, 1       # código do syscall para imprimir inteiro
+        move $a0, $t1   # coloca o valor de $t1 em $a0
+        syscall         # imprime o valor de $t1
+        move $a0, $t2   # coloca o valor de $t2 em $a0
+        syscall         # imprime o valor de $t2
+        move $a0, $t3   # coloca o valor de $t3 em $a0
+        syscall         # imprime o valor de $t3
+        
+        # Termina o programa
+        li $v0, 10      # código do syscall para encerrar o programa
+        syscall

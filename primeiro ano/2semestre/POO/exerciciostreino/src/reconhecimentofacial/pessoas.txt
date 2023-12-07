@@ -1,0 +1,17 @@
+Nome: João
+Genero: MASCULINO
+Nariz: GRANDE
+Boca: GRANDE
+Cor dos olhos: VERDE
+Cor do cabelo: PRETO
+Formato do rosto: OVAL
+Idade: 30
+
+Nome: Maria
+Nariz: PEQUENO
+Boca: PEQUENA
+Genero: FEMININO
+Cor dos olhos: CASTANHA
+Cor do cabelo: LOIRO
+Formato do rosto: REDONDO
+Idade: 25

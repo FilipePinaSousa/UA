@@ -1,0 +1,11 @@
+	.data
+var1:	.word 0x12345678
+str:	.asciiz "ola mundo!"
+
+	.text
+main:	la	$a0,str
+	addi 	$v0,$0 , 4 # $v0 = 0+4
+	syscall #print 
+	
+	addi $v0,$0,10
+	syscall #exit()

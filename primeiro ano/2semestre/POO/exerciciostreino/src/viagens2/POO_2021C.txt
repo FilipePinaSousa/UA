@@ -1,0 +1,13 @@
+
+Alínea 1) ----------------------------------
+
+Sabores Gostosos vai visitar 4 restaurantes
+A Volta do Churrasco vai visitar 3 restaurantes
+RESTAURANTES DE Sabores Gostosos: [Restaurante [nome=Carvao em Brasa, tipocomida=CHURRASQUEIRA], Restaurante [nome=Super Marios, tipocomida=ITALIANO], Restaurante [nome=Camarao Selvagem, tipocomida=MARISQUEIRA], Restaurante [nome=Flower Taste, tipocomida=VEGETARIANO]]
+PASSEIOS DE VISITAS A Arquitetura Antiga: [Igreja Velha, Aqueduto]
+PASSEIOS DE VISITAS A Bares: [null, null, null, null, null, null, null, null, null, null]
+AGENCIA: AgenciaTuristica Abaixo as Calorias
+conjuntoAtividades=[Gastronomia [restaurantes=[Restaurante [nome=Carvao em Brasa, tipocomida=CHURRASQUEIRA], Restaurante [nome=Super Marios, tipocomida=ITALIANO], Restaurante [nome=Camarao Selvagem, tipocomida=MARISQUEIRA], Restaurante [nome=Flower Taste, tipocomida=VEGETARIANO]]], Gastronomia [restaurantes=[Restaurante [nome=Fome e Fogo, tipocomida=CHURRASQUEIRA], Restaurante [nome=Bem passado, tipocomida=CHURRASQUEIRA], Restaurante [nome=Grelha do Chefe, tipocomida=CHURRASQUEIRA]]], PasseioBicicleta [locais=[Ljava.lang.String;@606d8acf], PasseioBicicleta [locais=[Ljava.lang.String;@782830e]], endereço=Aveiro]
+
+Alínea 2) ----------------------------------
+

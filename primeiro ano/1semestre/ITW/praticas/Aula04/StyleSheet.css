@@ -1,0 +1,25 @@
+﻿body {
+    font-family: "Open Sans",Tahoma, Geneva, Verdana,sants-erif;margin: 0;padding: 0;}
+.top {width:960px;height:50px;margin}
+.banner {
+    width: 760px;
+    height: 880px;
+    background-color: aquamarine;
+    Border: solid 2px white;
+    background-image: url(https://locale.pt/wp-content/uploads/dolmen-produtos-locale-final_bengala-2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    margin:auto
+}
+.content {
+    width: 560px;
+    height: 200px;
+    background-color: aqua;float:left;Border:solid 1px white;
+}
+.caixa {width: 200px;height: 200px;background-color:aquamarine;float:left;}
+.footer {width: 200px;height: 50px; background-color: black; clear:left;}
+<body>
+    <div>
+    <div>
+    <div>

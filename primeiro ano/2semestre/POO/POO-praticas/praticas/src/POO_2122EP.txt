@@ -1,0 +1,7 @@
+
+Alínea 1) ----------------------------------
+
+Event [atividades=[Sport [modalidade=KAYAK], Catering [opcao=FULL_MENU]], data=2022-06-24]
+
+
+

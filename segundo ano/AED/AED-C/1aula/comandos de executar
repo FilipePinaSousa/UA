@@ -1,0 +1,5 @@
+
+    cd .. (anda um ficheiro para tras)
+    cd ./3aula (anda um ficheiro para a frente)
+    gcc -Wall 3aula.c -o 3aula.exe(cria um ficheiro executavel)
+    ./a.exe

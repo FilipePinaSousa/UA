@@ -1,0 +1,10 @@
+	.data 
+	.text 
+
+
+main:	li $t0,0x123456789
+
+	and $t2,$t0,$t1 
+	or $t3,$t0,$t1
+	not $t6,$t0
+	

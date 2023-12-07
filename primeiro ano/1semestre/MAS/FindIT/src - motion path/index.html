@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+    <div class="demo-wrapper">
+      <div id="emoji">😎</div>
+      <svg id="demo-svg" width="1000" height="500">
+        <path stroke="red" fill="none" d="M 106 316 L 195 94 L 310 310 L 354 70 L 416 181 L 539 47 L 591 266 L 755 55 L 805 413 Z"></path>
+      </svg>
+    </div>
+
+    <script src="anime.min.js"></script>
+    <script>
+      let path = anime.path('#demo-svg path');
+
+      anime({
+        targets: '#emoji',
+        translateX: path('x'),
+        translateY: path('y'),
+        rotate: path('angle'),
+        easing: 'linear',
+        duration: 5000,
+        loop: true
+      });
+    </script>
+  </body>
+</html>

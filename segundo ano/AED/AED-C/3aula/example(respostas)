@@ -1,0 +1,37 @@
+
+
+    1.Contagem de Iterações Internas: O código possui uma variável global count que é usada para contar o número de iterações internas em cada algoritmo.
+    Isso permite avaliar o desempenho de cada algoritmo em termos de quantas operações são executadas.
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    2.Algoritmos de Complexidade Linear (O(n)): O código testa algoritmos como vector_sum, vector_inner_product, vector_addition, find_index, count_indices, e factorial.
+    Ele gera instâncias de teste aleatórias para esses algoritmos e registra o número de iterações internas em várias execuções.
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+    3.Algoritmos de Complexidade Quadrática (O(n^2)): O código testa o algoritmo multiplication, que realiza a multiplicação de matrizes.
+    Ele também gera instâncias de teste aleatórias e registra o número de iterações internas.
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+    4.Algoritmos com Complexidade Exponencial: O código contém algoritmos como F e Fi, que têm complexidade exponencial.
+    Eles não são testados para instâncias grandes, pois seu tempo de execução cresce exponencialmente com o tamanho da entrada.
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+    5.Algoritmo com Complexidade de Fatorial:
+     O algoritmo print_all_permutations_recursive é mencionado como tendo pior complexidade do que exponencial (complexidade fatorial).
+     Ele gera todas as permutações de um conjunto e imprime cada uma delas.
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+    6.Algoritmos com Complexidade Pequena: O código também inclui funções como power_dd e power_di, que não são testadas extensivamente, pois têm complexidade pequena.
+
+
+
+
+
+Para determinar a maior instância de teste que pode ser resolvida em tempo útil em seu computador, você pode executar o código com diferentes valores de n e analisar o tempo de execução e a contagem de iterações internas. Isso permitirá identificar em qual ponto o desempenho se torna impraticável para cada algoritmo.
+
+Tenha em mente que o limite de tamanho da instância de teste que pode ser resolvido em tempo útil depende do poder de processamento do seu computador e da eficiência dos algoritmos implementados. Algoritmos com complexidade superior a linear podem se tornar impraticáveis para entradas grandes. Portanto, é importante otimizar algoritmos ou considerar abordagens alternativas para lidar com problemas maiores.

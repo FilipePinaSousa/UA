@@ -1,0 +1,21 @@
+function [y,t] = ReconstroiSinal(x, Ta)
+% Define a frequência de amostragem
+fa = 1 / Ta;
+f = 100 * fa;
+
+% Comprimento do sinal de entrada
+N = length(x);
+
+% Inicialize um array para armazenar o sinal reconstruído
+y = zeros(1, N);
+t = (0 :(length(y)-1))
+
+
+
+for n = 1:N
+    % Calcule o valor da função sinc
+
+    y = y + x(n)* sinc(fa*(t - (n-1)*Ta));
+    end
+
+end

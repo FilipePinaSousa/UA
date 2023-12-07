@@ -1,0 +1,123 @@
+# Bubble Sort implementation in MIPS assembly
+
+# Data section
+.data
+array: .space 100    # Space for the array
+n: .word 0           # Length of the array
+aux: .word 0         # Temporary variable for swapping
+houveTroca: .word 0  # Flag indicating if a swap occurred
+prompt: .asciiz "Enter the number of elements: "
+input_prompt: .asciiz "Enter element at index "
+output_prompt: .asciiz "Sorted array: "
+
+# Text section
+.text
+.globl main
+
+main:
+    # Prompt for the number of elements
+    li $v0,$0, 4               # Syscall code para printing a string
+    la $a0, prompt          # Load address of the prompt string
+    syscall
+
+    # Read the number of elements
+    
+    li $v0, 5               # Syscall code para ler  um integer
+    syscall      #$V0=READINT()
+    move $t0, $v0           # guarda o numero de elementos no $t0 = readint() pois o resultado e o usuario que escreve logo o move e depois syscall
+
+    # Store the number of elements in memory
+    sw $t0, n              # Save the number of elements in the 'n' variable
+
+    # Prompt for and read each element of the array
+    li $t1, 0               # Initialize the loop counter
+    loop:
+    beq $t1, $t0, sort      # If the loop counter equals the number of elements, exit the loop
+
+    # Prompt for the current element
+    li $v0, 4               # Syscall code for printing a string
+    la $a0, input_prompt    # Load address of the input prompt string
+    syscall
+
+    # Print the index of the current element
+    move $a0, $t1           # Move the loop counter to $a0
+    li $v0, 1               # Syscall code for printing an integer
+    syscall
+
+    # Prompt for reading the current element
+    li $v0, 4               # Syscall code for printing a string
+    la $a0, ": "            # Load address of the ':' string
+    syscall
+
+    # Read the current element
+    li $v0, 5               # Syscall code for reading an integer
+    syscall
+    sw $v0, array($t1)     # Store the input element in the array
+
+    addi $t1, $t1, 1        # Increment the loop counter
+    j loop                  # Continue with the next iteration
+
+    sort:
+    la $a0, array            # Load address of the array
+    lw $a1, n                # Load value of n
+    jal bubble_sort          # Call the bubble_sort function
+
+    # Print the sorted array
+    li $v0, 4                # Syscall code for printing a string
+    la $a0, output_prompt    # Load address of the output prompt string
+    syscall
+
+    li $v0, 1                # Syscall code for printing an integer
+    move $t1, $zero          # Reset the loop counter
+
+    print_loop:
+    beq $t1, $t0, exit       # If the loop counter equals the number of elements, exit the loop
+
+    lw $a0, array($t1)      # Load the current element of the array
+    syscall
+
+    addi $t1, $t1, 1         # Increment the loop counter
+    j print_loop             # Continue with the next iteration
+
+    exit:
+    # Exit the program
+    li $v0, 10               # Syscall code for program exit
+    syscall
+
+bubble_sort:
+    # Initialize loop variables
+    li $t1, 1                # i = 1
+    li $t2, 1                # houveTroca = 1
+
+    # Outer loop: repeat until no swaps occur
+    outer_loop:
+    beqz $t2, done           # If houveTroca == 0, exit the loop
+
+    # Reset swap flag
+    li $t2, 0                # houveTroca = 0
+
+    # Inner loop: perform comparisons and swaps
+    inner_loop:
+    blt $t1, $a1, compare    # if i < n, branch to compare
+    j outer_loop             # Otherwise, exit the inner loop
+
+    compare:
+    sll $t3, $t1, 2          # Multiply i by 4 (word size)
+    addu $t4, $a0, $t3       # Compute address of array[i]
+    lw $t5, 0($t4)           # Load array[i]
+    lw $t6, 4($t4)           # Load array[i+1]
+
+    bgt $t5, $t6, swap       # if array[i] > array[i+1], branch to swap
+
+    increment_i:
+    addiu $t1, $t1, 1        # i++
+    j inner_loop             # Continue with the next iteration
+
+    swap:
+    sw $t5, 4($t4)           # Store array[i] in array[i+1]
+    sw $t6, 0($t4)           # Store array[i+1] in array[i]
+    li $t2, 1                # houveTroca = 1
+    j increment_i            # Continue with the next iteration
+
+    done:
+    jr $ra                   # Return to the caller

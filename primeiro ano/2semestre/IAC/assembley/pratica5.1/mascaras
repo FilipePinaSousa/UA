@@ -1,0 +1,50 @@
+li $t0, 0x10000000    # Máscara para extrair o dígito mais significativo
+li $t2, 0x10          # Constante para converter o dígito em um caractere hexadecimal
+
+# Extrair e imprimir cada dígito hexadecimal
+andi $t3, $t1, 0xF0000000   # Extrair o dígito mais significativo
+srl $t3, $t3, 28            # Deslocar o dígito para a direita
+add $t3, $t3, $t2           # Converter o dígito em um caractere hexadecimal
+print_int16 $t3             # Imprimir o caractere
+print_char '\n'
+
+andi $t3, $t1, 0x0F000000   # Extrair o segundo dígito
+srl $t3, $t3, 24
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x00F00000   # Extrair o terceiro dígito
+srl $t3, $t3, 20
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x000F0000   # Extrair o quarto dígito
+srl $t3, $t3, 16
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x0000F000   # Extrair o quinto dígito
+srl $t3, $t3, 12
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x00000F00   # Extrair o sexto dígito
+srl $t3, $t3, 8
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x000000F0   # Extrair o sétimo dígito
+srl $t3, $t3, 4
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'
+
+andi $t3, $t1, 0x0000000F   # Extrair o último dígito
+add $t3, $t3, $t2
+print_int16 $t3
+print_char '\n'

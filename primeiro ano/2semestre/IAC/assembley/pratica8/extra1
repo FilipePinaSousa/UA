@@ -1,0 +1,44 @@
+# Data section
+.data
+lista: .word 4, 3, -2, 1, 27, 45     # Array of integers
+array_content_str: .asciiz "O conteudo do Array e: \n"
+dash_str: .asciiz " - "
+
+# Text section
+.text
+.globl main
+
+main:
+    # Print "O conteudo do Array é:"
+    la $a0, array_content_str     # Load address of the string
+    li $v0, 4                     # Syscall code for printing a string
+    syscall
+
+    # Print the content of the array
+    li $t0, 0                     # Initialize the loop counter
+
+    print_loop:
+    beq $t0, 6, exit              # If the loop counter equals 6, exit the loop
+
+    # Calculate the effective address of lista[i]
+    la $t1, lista                 # Load base address of lista
+    sll $t2, $t0, 2               # Multiply $t0 by 4 (word size)
+    addu $t1, $t1, $t2            # Calculate the effective address
+
+    # Load the value at lista[i]
+    lw $a0, 0($t1)                # Load the current element of the array
+    li $v0, 1                     # Syscall code for printing an integer
+    syscall
+
+    # Print "-"
+    la $a0, dash_str              # Load address of the "-" string
+    li $v0, 4                     # Syscall code for printing a string
+    syscall
+
+    addi $t0, $t0, 1              # Increment the loop counter
+    j print_loop                  # Continue with the next iteration
+
+    exit:
+    # Exit the program
+    li $v0, 10                    # Syscall code for program exit
+    syscall

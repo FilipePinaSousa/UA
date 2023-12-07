@@ -1,0 +1,9 @@
+Biblioteca Municipal de Aveiro, Endereço: Largo Dr. Jaime Magalhães Lima, 3800 - 156 Aveiro, Portugal
+
+[Livro]   Título:Branca de neve e os sete anões, Editora:Abril Morumbi, Autores:Jacob Grimm; Wilhelm Grimm
+[Jornal]  Título:Diário de notícias, Editora:null, Ver: Cores
+[Livro]   Título:História da Europa, Editora:Lisboa: Dom Quixote, Autores:Jean-Baptiste Duroselle, ISBN:972-20-0824-2
+[Jornal]  Título:O gafanhoto, Editora:null, Periodiciade:BIMESTRAL
+[Livro]   Título:Papillon, Editora:Amadora: Bertrand, Autores:Henri Charrière
+[Revista] Título:Revista municipal, Editora:Aveiro: C.M.A., ISSN:0874-727X
+

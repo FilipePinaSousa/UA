@@ -1,0 +1,4 @@
+
+7a) Numa colisão elástica, angulo max é sempre 90º, logo angulo final: o = 90 - 35 = 55
+
+b) Não, o ângulo é sempre 90º

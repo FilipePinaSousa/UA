@@ -1,0 +1,28 @@
+.data
+	prompt:.asciiz "Introduza um numero"
+	
+.text
+main:
+	li $v0 ,4
+	la $a0, prompt #Apresenta o prompt 
+	syscall
+	
+	li $v0, 5
+	syscall
+	move $t0, $v0	#guardar em $t0 para ser uma variavel
+	li $t1,0 #i = 0
+for:		
+		
+		bge $t1, $t0, endfor
+		
+		li $a0, '-'
+		la $v0, 11
+		syscall
+		
+		addi $t1, $t1, 1
+		
+		j for
+	
+endfor:
+	li $v0,10
+	syscall

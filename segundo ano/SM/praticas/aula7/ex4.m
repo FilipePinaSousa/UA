@@ -1,99 +1,78 @@
-clear
-close all
-clc
+load Guitar03.mat
 
-[x, fa] = audioread("vozportugues.wav");
+[x2,fa2] = audioread("vozportugues.wav");
 
-Ta = 1/fa;
-a = 0.9;
+x2 = x2(1:round(length(x2)*1/10));
 
-dist = 17;
+%% a)
+% sim
 
-t_total = 2*17/340;
-D = t_total/Ta;
-
+%% b)
+ts = 34/340;
+D = round(ts*fa2)*10;
+a=0.9;
 num=[1 zeros(1,D-1) a];
-den = 1;
+den=1;
 
-[H,f]=respfreq(num,den,fa);
+[H,f] = respfreq(num,den,fa2);
 
-t = ((0:length(x)-1) * fa); 
+figure(1)
+plot(f,H)
 
-y = filter(num, den, x);
+y = filter(num,den,x2);
 
-figure;
+figure(2);
+subplot(1,2,1);
+spectrogram(x2,1024,512,1024,fa2,"yaxis");
+subplot(1,2,2);
+spectrogram(y,1024,512,1024,fa2,"yaxis");
 
-subplot(3,1,1);
-plot(t, x);
-title('Sinal de Entrada (xr)');
-xlabel('Tempo (s)');
-ylabel('Amplitude');
+% soundsc(y, fa)
 
-subplot(3,1,2);
-plot(f, abs(H));
-title('Módulo da Resposta em Frequência (|H(f)|)');
-xlabel('Frequência (Hz)');
-ylabel('|H(f)|');
-
-subplot(3,1,3);
-ty = 0:1/fa:length(y)/fa-1/fa;
-plot(ty, y);
-title('Sinal Filtrado (y)');
-xlabel('Tempo (s)');
-ylabel('Amplitude');
-
-% sound(y, fa);
-
-figure;
-Espetro(x, 1/fa);
-title('Espetro do sinal (x)');
-
-figure;
-Espetro(y, 1/fa);
-title('Espetro do sinal (y)');
+%% c)
+% bananas
 
 %% d)
-
-D = 10;
+D = 8;
 a = 0.9;
+num=1;
+den=[1 zeros(1,D-1) -a];
 
-num=[1 zeros(1,D-1) a];
-den = 1;
+[H,f] = respfreq(num,den,fa2);
 
-[H,f]=respfreq(num,den,fa);
+figure(1)
+plot(f,H)
 
-t = ((0:length(x)-1) * fa); 
+y = filter(num,den,x2);
 
-y = filter(num, den, x);
+figure(2);
+subplot(1,2,1);
+spectrogram(x2,1024,512,1024,fa2,"yaxis");
+subplot(1,2,2);
+spectrogram(y,1024,512,1024,fa2,"yaxis");
 
-figure;
+% soundsc(y, fa)
 
-subplot(3,1,1);
-plot(t, x);
-title('Sinal de Entrada (xr)');
-xlabel('Tempo (s)');
-ylabel('Amplitude');
+%% e)
+ts = 1/100;
+D = round(ts*fa);
+a = 0.9;
+num=1;
+den=[1 zeros(1,D-1) -a];
 
-subplot(3,1,2);
-plot(f, abs(H));
-title('Módulo da Resposta em Frequência (|H(f)|)');
-xlabel('Frequência (Hz)');
-ylabel('|H(f)|');
+[H,f] = respfreq(num,den,fa);
 
-subplot(3,1,3);
-ty = 0:1/fa:length(y)/fa-1/fa;
-plot(ty, y);
-title('Sinal Filtrado (y)');
-xlabel('Tempo (s)');
-ylabel('Amplitude');
+figure(1)
+plot(f,H)
 
-% sound(y, fa);
+y = filter(num,den,x);
 
-figure;
-Espetro(x, 1/fa);
-title('Espetro do sinal (x)');
+figure(2);
+subplot(1,2,1);
+spectrogram(x,1024,512,1024,fa,"yaxis");
+subplot(1,2,2);
+spectrogram(y,1024,512,1024,fa,"yaxis");
 
-figure;
-Espetro(y, 1/fa);
-title('Espetro do sinal (y)');
+soundsc(y, fa)
+
 

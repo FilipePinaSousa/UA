@@ -1,3 +1,3 @@
-/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++/cmake-build-debug/CMakeFiles/AED_c__.dir
-/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++/cmake-build-debug/CMakeFiles/AED_c__.dir
+/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AED_c__::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AED_c__-Debug-e16b5b71355e841c4213.json",
+					"jsonFile" : "target-AED_c__-Debug-0b2b458150dc8b740f33.json",
 					"name" : "AED_c__",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++/cmake-build-debug",
-		"source" : "/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++"
+		"build" : "/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++/cmake-build-debug",
+		"source" : "/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }

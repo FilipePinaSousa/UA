@@ -1,4 +1,4 @@
-# Install script for directory: /home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++
+# Install script for directory: /home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ervinhaverde/Desktop/UA/segundo ano/AED/AED-c++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ervinhaverde/Documentos/GitHub/UA/segundo ano/AED/AED-C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
